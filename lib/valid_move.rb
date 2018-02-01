@@ -1,6 +1,6 @@
 # code your #valid_move? method here
 def valid_move?(board, entry)
-  if (board[entry] >= 0) || (board[entry] <= 8)
+  if board[entry].between(0,8)
     TRUE
   elsif position_taken?(board, entry)
     TRUE
